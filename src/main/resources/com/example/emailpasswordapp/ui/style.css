@@ -1,0 +1,172 @@
+/* =============================
+   🌙 NEUMORPHIC THEME - JAVA FX
+   Consistent style for Login, Signup, and Welcome pages
+   ============================= */
+
+.root {
+    -fx-background-color: #e0e5ec;
+    -fx-font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* ========== MAIN CONTAINER (CARD) ========== */
+.container {
+    -fx-background-color: #e0e5ec;
+    -fx-background-radius: 30;
+    -fx-padding: 40 30;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 30, 0.5, 10, 10),
+                dropshadow(three-pass-box, #ffffff, 30, 0.9, -10, -10);
+    -fx-spacing: 20;
+}
+
+/* ========== TITLES & TEXT ========== */
+.title {
+    -fx-text-fill: #3d4468;
+    -fx-font-size: 28px;
+    -fx-font-weight: 700;
+}
+
+.subtitle {
+    -fx-text-fill: #9499b7;
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+}
+
+.info {
+    -fx-text-fill: #6c7293;
+    -fx-font-size: 14px;
+}
+
+.status {
+    -fx-text-fill: #ff3b5c;
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+}
+
+/* ========== INPUT FIELDS ========== */
+.input {
+    -fx-background-color: #e0e5ec;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 10 14;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-pref-width: 260;
+    -fx-text-fill: #3d4468;
+    -fx-prompt-text-fill: #a1a6c2;
+    -fx-effect: innershadow(gaussian, #bec3cf, 8, 0.5, 4, 4),
+                innershadow(gaussian, #ffffff, 8, 0.6, -4, -4);
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+}
+
+.input:focused {
+    -fx-effect: innershadow(gaussian, #bec3cf, 4, 0.4, 2, 2),
+                innershadow(gaussian, #ffffff, 4, 0.6, -2, -2);
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+    -fx-background-color: #e0e5ec;
+    -fx-text-fill: #3d4468;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 12 30;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 15, 0.4, 4, 4),
+                dropshadow(three-pass-box, #ffffff, 15, 0.8, -4, -4);
+    -fx-transition: all 0.3s ease;
+}
+
+.btn:hover {
+    -fx-translate-y: -2;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 20, 0.4, 6, 6),
+                dropshadow(three-pass-box, #ffffff, 20, 0.8, -6, -6);
+}
+
+.btn:pressed {
+    -fx-effect: innershadow(gaussian, #bec3cf, 6, 0.5, 2, 2),
+                innershadow(gaussian, #ffffff, 6, 0.7, -2, -2);
+}
+
+/* ========== HYPERLINKS ========== */
+.hyperlink {
+    -fx-text-fill: #6c7293;
+    -fx-font-weight: 600;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #3d4468;
+    -fx-underline: true;
+}
+
+/* ========== ICON CIRCLE ========== */
+.neu-icon {
+    -fx-background-color: #e0e5ec;
+    -fx-background-radius: 50%;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 15, 0.5, 5, 5),
+                dropshadow(three-pass-box, #ffffff, 15, 0.9, -5, -5);
+}
+
+.glow:hover {
+    -fx-effect: dropshadow(gaussian, rgba(108,114,147,0.3), 20, 0.3, 0, 0);
+}
+
+/* ========== DIVIDER STYLES (for "or" section) ========== */
+.label {
+    -fx-text-fill: #9499b7;
+}
+
+.line {
+    -fx-background-color: #bec3cf;
+    -fx-pref-height: 1;
+}
+
+/* ========== SMOOTH TRANSITIONS ========== */
+* {
+    -fx-transition: all 0.25s ease;
+}
+
+/* ========== WELCOME PAGE SPECIFICS ========== */
+.welcome-box {
+    -fx-background-color: #e0e5ec;
+    -fx-background-radius: 25;
+    -fx-padding: 40 20;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 25, 0.5, 10, 10),
+                dropshadow(three-pass-box, #ffffff, 25, 0.8, -10, -10);
+}
+/* ========== PASSWORD TOGGLE BUTTON (👁 / 🙈) ========== */
+.icon-btn {
+    -fx-background-color: #e0e5ec;
+    -fx-text-fill: #6c7293;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-padding: 6;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 8, 0.5, 2, 2),
+                dropshadow(three-pass-box, #ffffff, 8, 0.7, -2, -2);
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.icon-btn:hover {
+    -fx-text-fill: #3d4468;
+    -fx-effect: dropshadow(three-pass-box, #bec3cf, 10, 0.6, 3, 3),
+                dropshadow(three-pass-box, #ffffff, 10, 0.9, -3, -3);
+}
+
+.icon-btn:pressed {
+    -fx-effect: innershadow(gaussian, #bec3cf, 6, 0.5, 2, 2),
+                innershadow(gaussian, #ffffff, 6, 0.7, -2, -2);
+    -fx-translate-y: 1;
+}

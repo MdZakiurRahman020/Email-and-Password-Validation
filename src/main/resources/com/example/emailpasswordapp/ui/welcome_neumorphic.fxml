@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.emailpasswordapp.controllers.WelcomeController"
+            stylesheets="@style.css"
+            prefWidth="500" prefHeight="560">
+
+    <VBox alignment="CENTER" spacing="28" prefWidth="480" prefHeight="540"
+          styleClass="container" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10">
+
+        <!-- HEADER -->
+        <VBox alignment="CENTER" spacing="10">
+            <StackPane alignment="CENTER" styleClass="neu-icon glow">
+                <Circle radius="45" fill="#e0e5ec" />
+                <Label text="🎉" style="-fx-font-size: 30px; -fx-text-fill: #6c7293;" />
+            </StackPane>
+            <Label text="Welcome!" styleClass="title" />
+            <Label fx:id="emailLabel" text="Logged in as: user@mail.com" styleClass="info" />
+        </VBox>
+
+        <!-- BODY TEXT -->
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="You have successfully logged in." styleClass="subtitle" />
+            <Label text="Explore, learn, and build with us 💻" styleClass="subtitle" />
+        </VBox>
+
+        <!-- BUTTON -->
+        <Button text="Log Out" onAction="#handleLogout" styleClass="btn" />
+
+        <!-- STATUS LABEL -->
+        <Label fx:id="statusLabel" styleClass="status" visible="false" text="Logging out..." />
+
+    </VBox>
+</AnchorPane>
